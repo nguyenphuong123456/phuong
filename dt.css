@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.product_cards .card p {
+    color: rgb(24, 92, 92);
+
+}
+
+.container {
+    position: relative;
+    max-width: 1080px;
+    width: 100%;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.container h1 {
+    color: #007BFF;
+    font-size: 50px;
+}
+
+.filter_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter_buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.filter_buttons button.active {
+    background-color: #0D0C22;
+    color: #fff;
+}
+
+.product_cards {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+}
+
+.card.hide {
+    display: none;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    font-size: 15px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .product_cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.pay {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.pay h2 {
+    margin-bottom: 20px;
+    color: #ff0000;
+
+}
+
+.pay table {
+    width: 100%;
+
+}
+
+.pay table thead tr th:first-child {
+    text-align: left;
+
+}
+
+.pay table tr td {
+    border-bottom: 1px solid white;
+    padding: 12px 0;
+    color: #ff0000;
+}
+
+.pay table thead tr th:last-child {
+    text-align: right;
+}
+
+.yay table tbody tr th:last-child {
+    text-align: right;
+}
+
+th {
+    color: #007BFF;
+    background: #000000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Dịch chuyển modal vào giữa trang */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    /* Độ rộng của modal, có thể thay đổi theo ý muốn */
+    max-width: 500px;
+    /* Độ rộng tối đa của modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng cho modal */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="email"],
+.modal-content input[type="call"],
+.modal-content input[type="addres"],
+.modal-content input[type="evaluate"],
+.modal-content textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-content .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content .btn:hover {
+    background-color: #555;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: #333;
+
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#checkout-btn {
+    background-color: #4CAF50;
+    /* Màu nền */
+    color: white;
+    /* Màu chữ */
+    border: none;
+    /* Xóa viền */
+    padding: 10px 20px;
+    /* Khoảng cách bên trong */
+    text-align: center;
+    /* Canh giữa văn bản */
+    text-decoration: none;
+    /* Xóa gạch chân */
+    display: inline-block;
+    /* Hiển thị theo dòng */
+    font-size: 16px;
+    /* Kích thước chữ */
+    margin-left: auto;
+    /* Tự động căn sang phải */
+    cursor: pointer;
+    /* Đổi con trỏ chuột khi di chuột vào */
+    border-radius: 5px;
+    /* Bo tròn góc */
+}
+
+#checkout-btn:hover {
+    background-color: #ff0000;
+    /* Màu nền khi di chuột vào */
+}
+
+#contact .container p {
+    text-align: left;
+    font-size: 20px;
+}
+#contact .container h2 {
+    font-size: 25px;
+    color: #ff0000;
+}
+
+
+
+section {
+    padding: 20px 0;
+}
+section#home {
+    background-color: #f4f4f4;
+}
+section#products {
+    background-color: #f4f4f4;
+}
+section#about {
+    background-color: #f4f4f4;
+}
+section#contact {
+    background-color: #f4f4f4;
+}

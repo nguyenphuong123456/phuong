@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dt.css">
+    <title>Smartphone</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+          <h1>Smartphone</h1>
+          <nav>
+            <ul>
+              <li><a href="#home">Trang chủ</a></li>
+              <li><a href="#products">Các sản phẩm</a></li>
+              <li><a href="#about">Chi tiết đơn hàng</a></li>
+              <li><a href="#contact">Liên hệ</a></li>
+              <li>
+                <a href="#" id="cart">
+                  Giỏ hàng (<span id="cart-quantity">0</span>)
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+    <div class="container">
+        <div class="filter_buttons">
+            <button data-filter="all" class="active">Tất cả</button>
+            <button data-filter="iphone">iPhone</button>
+            <button data-filter="samsung">Samsung</button>
+            <button data-filter="xiaomi">Xiaomi</button>
+            <button data-filter="phukien">Phụ kiện</button>
+        </div>
+        <div class="product_cards">
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone1.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 15 Promax</h6>
+                <p>Giá: 9.550.000đ</p>
+                <button class="btn add-to-cart" data-price="9.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone2.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 11 Pro</h6>
+                <p>Giá: 11.500.000đ</p>
+                <button class="btn add-to-cart" data-price="11.500.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 11 Pro</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 11</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 12</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 13 Pro</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 14 Promax</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="iphone">
+                <img src="https://github.com/andev-frontend/Product_Filter/blob/main/images/iphone3.jpg?raw=true"
+                    alt="">
+                <h6 class="card_title">iPhone 13</h6>
+                <p>Giá: 10.550.000đ</p>
+                <button class="btn add-to-cart" data-price="10.550.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/237603/samsung-galaxy-a22-4g-mint-1-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A22</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/251856/samsung-galaxy-a03-xanh-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A13</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/241049/samsung-galaxy-a03s-black-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A03s</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/262402/Samsung-Galaxy-A13-cam-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A13</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/316075/thumb-xanh-duong-4g-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A15</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/274018/samsung-galaxy-a24-green-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung  Galaxy A24</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/319584/samsung-galaxy-a15-5g-xanh-duong-nhat-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A15</h6>
+                <p>Giá: 6.000.000đ</p>
+                <button class="btn add-to-cart" data-price="6.000.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="samsung">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/298377/samsung-galaxy-a34-5g-bac-thumb-1-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Samsung Galaxy A34</h6>
+                <p>Giá: 5.850.000đ</p>
+                <button class="btn add-to-cart" data-price="5.850.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/246200/redmi-10-gray-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi Redmi 10</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/269831/Xiaomi-redmi-note-11-black-600x600.jpeg"
+                    alt="">
+                <h6 class="card_title">Xiaomi Redmi Note 11</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/235969/xiaomi-redmi-note-10s-xanh-1-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi Redmi Note 10S</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/229228/xiaomi-redmi-note-10-pro-thumb-xam-600x600-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi Redmi Note 10 Pro</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/246640/xiaomi-redmi-note-11-pro-5g-xam-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi Redmi Note 11 Pro</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/249427/xiaomi-11-lite-5g-ne-pink-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi 11 Lite 5G NE</h6>
+                <p>Giá: 4.570.000đ</p>
+                <button class="btn add-to-cart" data-price="4.570.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/248293/Xiaomi-11T-White-1-2-3-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Xiaomi 11T 5G 128GB</h6>
+                <p>Giá: 4.950.000đ</p>
+                <button class="btn add-to-cart" data-price="4.950.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="xiaomi">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/262566/xiaomi-11t-pro-5g-8gb-thumb-600x600.jpeg"
+                    alt="">
+                <h6 class="card_title">Xiaomi 11T Pro 5G 128GB</h6>
+                <p>Giá: 6.950.000đ</p>
+                <button class="btn add-to-cart" data-price="6.950.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-3.png"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-7.png"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-6.png"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-5.png"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-1.png"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/09/22/clear-case-iphone-15-4.png"
+                alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.tgdd.vn/Products/Images/60/315058/op-lung-magsafe-iphone-15-pro-max-nhua-trong-apple-mt233-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://ict-imgs.vgcloud.vn/2020/10/14/09/chi-tiet-gia-ban-phu-kien-iphone-12-va-iphone-12-pro-6.jpg"
+                    alt="">
+                <h6 class="card_title">Ốp lưng Iphone</h6>
+                <p>Giá: 50.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.tgdd.vn/Products/Images/9499/230315/adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-avatar-1-1-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Sạc Apple 20W</h6>
+                <p>Giá: 550.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.tgdd.vn/Products/Images/58/315202/cap-type-c-type-c-1m-apple-mqkj3-thumb-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Cap Type C</h6>
+                <p>Giá: 550.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.tgdd.vn/Products/Images/12979/315851/cap-chuyen-doi-usb-c-sang-lightning-apple-muqx3-thumb-1-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Cap chuyển đổi</h6>
+                <p>Giá: 550.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="card" data-filter="phukien">
+                <img src="https://cdn.tgdd.vn/Products/Images/12979/325164/cap-thunderbolt-4-mw5j3-thumb-2-600x600.jpg"
+                    alt="">
+                <h6 class="card_title">Cáp Apple MW5J3</h6>
+                <p>Giá: 550.000đ</p>
+                <button class="btn add-to-cart" data-price="50.000">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="pay">
+        <h2>Chi tiết đơn hàng của bạn</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                <tbody id="cart-items">
+
+
+                </tbody>
+                </thead>
+            </table>
+            <div class="price-total">
+                <p style="font-weight: bold;color: brown;">Tổng tiền: <span id="total-price"></span><sup>đ</sup></p>
+                <button id="checkout-btn" class="btn">Thanh toán</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+          <h2>Liên hệ</h2>
+          <p>Địa chỉ: Quảng Thọ, Quảng Điền, Thừa Thiên Huế</p>
+          <p>Email: dinhphuongn1812@gmail.com</p>
+          <p>Điện thoại: <a href="tel:+0334461571">0334-461-571</a></p>
+          <p>Chat với chúng tôi trên <a href="https://m.me/yourpage" target="_blank">Messenger</a></p>
+          <p>Hoặc chat với chúng tôi ngay lập tức!</p>
+          <a href="https://www.facebook.com/dinhphuongn1812" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9rmwedBXePxIXnkz3-LHD1EYlWw0T5OWvQ&s" alt="Messenger" style="width: 100px; height: 100px;">
+          </a>
+        </div>
+      </section>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Chi tiết đơn hàng</h2>
+            <form id="order-form">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="call">Số điện thoại:</label>
+                <input type="call" id="call" name="call" required>
+                <label for="addres">Địa chỉ:</label>
+                <input type="addres" id="addres" name="addres" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="evaluate">Đánh giá:</label>
+                <input type="evaluate" id="evaluate" name="evaluate" required>
+                <label for="quantity">Số lượng:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit" class="btn">Đặt hàng</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="dt.js"></script>
+
+</body>
+
+</html>
